@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화양탐정사무소 - 진실을 찾는 신뢰의 파트너</title>
+    <style>
+        /* 기본 스타일 */
+        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; line-height: 1.6; margin: 0; color: #333; scroll-behavior: smooth; }
+        header { background: #1a1a1a; color: #fff; padding: 1rem 5%; position: fixed; width: 90%; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #d4af37; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 0.9rem; }
+        
+        /* 로고 스타일 수정 */
+        .logo-container { display: flex; align-items: center; text-decoration: none; color: #d4af37; }
+        .logo-img { height: 35px; width: auto; margin-right: 15px; } /* 로고 높이는 헤더에 맞춰 조절 가능 */
+        .logo-text { font-size: 1.5rem; font-weight: bold; }
+
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 0.9rem; }
+
+        /* 히어로 섹션 */
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1500'); 
+                height: 70vh; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; padding: 0 20px; margin-top: 60px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; color: #ccc; }
+        
+        /* 섹션 공통 */
+        section { padding: 100px 10%; text-align: center; }
+        .bg-light { background: #f9f9f9; }
+        h2 { font-size: 2.2rem; margin-bottom: 40px; color: #1a1a1a; border-bottom: 3px solid #d4af37; display: inline-block; padding-bottom: 10px; }
+        h3 { color: #1a1a1a; margin-top: 0; }
+
+        /* 회사소개 상세 */
+        .intro-text { max-width: 800px; margin: 0 auto; text-align: left; background: #fff; padding: 40px; border-left: 5px solid #d4af37; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+        /* 주요업무 그리드 */
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px; }
+        .card { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s; text-align: left; }
+        .card:hover { transform: translateY(-10px); }
+        .card h3 { color: #d4af37; font-size: 1.4rem; margin-bottom: 15px; }
+        .card ul { padding-left: 20px; color: #666; font-size: 0.95rem; }
+        .card ul li { margin-bottom: 8px; }
+
+        /* 업무절차 타임라인 */
+        .process-container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin-top: 30px; }
+        .process-step { flex: 1; min-width: 200px; background: #1a1a1a; color: #fff; padding: 30px; border-radius: 10px; position: relative; }
+        .step-num { font-size: 2.5rem; font-weight: bold; color: rgba(212, 175, 55, 0.3); position: absolute; top: 10px; left: 15px; }
+        .process-step h4 { color: #d4af37; position: relative; z-index: 1; margin-top: 20px; }
+
+        /* 하단 고정 버튼 */
+        .call-btn { position: fixed; bottom: 20px; right: 20px; background: #d4af37; color: #fff; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 2000; }
+        
+        footer { background: #1a1a1a; color: #bbb; padding: 50px 10%; text-align: center; font-size: 0.85rem; border-top: 1px solid #333; }
+        footer strong { color: #fff; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo-container">
+        <img src="logo.gif" alt="화양 로고" class="logo-img">
+        <span class="logo-text">화양탐정사무소</span>
+    </a>
+    <nav>
+        <a href="#about">회사소개</a>
+        <a href="#services">주요업무</a>
+        <a href="#process">업무절차</a>
+        <a href="#contact">상담문의</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>안개 속의 진실, 화양이 밝혀드립니다!</h1>
+    <p>철저한 비밀 유지 | 신속한 증거 수집 | 전문 탐정 직접 상담</p>
+    <a href="tel:010-4578-3511" style="margin-top:20px; background:#d4af37; color:white; padding:12px 30px; text-decoration:none; border-radius:5px; font-weight:bold;">24시 무료 유선상담</a>
+</section>
+
+<section id="about">
+    <h2>회사소개</h2>
+    <div class="intro-text">
+        <h3>"인생의 가장 아름다웠던 순간(花樣), 그 진실을 지킵니다."</h3>
+        <p>화양탐정사무소는 고객의 말 못 할 고민을 해결하고, 가려진 진실을 밝혀내어 다시 평온한 일상으로 돌아갈 수 있도록 돕는 <strong>합법적 전문 조사 기관</strong>입니다.</p>
+        <p>전직 수사 전문가와 풍부한 현장 경험을 가진 베테랑 탐정들이 팀을 이루어 운영되며, 단순한 정보 수집을 넘어 법적 대응에 필요한 결정적 증거를 채증하는 데 특화되어 있습니다.</p>
+        <p><strong>[핵심가치]</strong><br>
+        1. 100% 비밀 보장(상담 후 즉시 파기 원칙)<br>
+        2. 합법적 테두리 내 최상의 결과 도출<br>
+        3. 특수장비 운용<br>
+        4. 실시간 현장 브리핑 및 투명한 업무 처리</p>
+    </div>
+</section>
+
+<section id="services" class="bg-light">
+    <h2>주요업무</h2>
+    <div class="services">
+        <div class="card">
+            <h3>개인/가정 조사</h3>
+            <ul>
+                <li>외도/불륜 법적 증거 수집</li>
+                <li>배우자 의심 행적 확인</li>
+                <li>가출 가족 및 소재 불명자 찾기</li>
+                <li>민사/스토킹 및 신변 위협 보호 채증</li>
+                <li>보험사기/의료사고/교통사고 범죄</li>
+                <li>미배정/계류/무고사건 규명지원</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>기업보안/비즈니스 조사</h3>
+            <ul>
+                <li>기업 부정부패 및 횡령 조사</li>
+                <li>산업 스파이 및 기술 유출 방지</li>
+                <li>채용 전 평판 조회 및 검증</li>
+                <li>거래처 미수금 및 자산 행적 조사</li>
+                <li>산업재해 보상금 조사</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>디지털/법률 지원</h3>
+            <ul>
+                <li>삭제된 카톡/문자 디지털 포렌식</li>
+                <li>사이버 명예훼손 및 추적 조사</li>
+                <li>소송에 필요한 유리한 증거 수집</li>
+                <li>부동산 사기 및 권리관계 조사</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="process">
+    <h2>업무절차</h2>
+    <div class="process-container">
+        <div class="process-step">
+            <span class="step-num">01</span>
+            <h4>무료 익명상담</h4>
+            <p>전화, 문자, 카톡을 통한 24시간 비공개 초기 상담</p>
+        </div>
+        <div class="process-step">
+            <span class="step-num">02</span>
+            <h4>분석 및 맞춤 전략</h4>
+            <p>사건 분석 후 최적의 조사 인원과 장비 투입 계획 수립</p>
+        </div>
+        <div class="process-step">
+            <span class="step-num">03</span>
+            <h4>계약 및 착수</h4>
+            <p>투명한 비용 산정 및 계약 체결 후 즉시 조사 착수</p>
+        </div>
+        <div class="process-step">
+            <span class="step-num">04</span>
+            <h4>증거 수집 및 보고</h4>
+            <p>현장 상황 실시간 보고 및 최종 증거물(영상/사진) 전달</p>
+        </div>
+        <div class="process-step">
+            <span class="step-num">05</span>
+            <h4>종결 및 파기</h4>
+            <p>사후 법률 자문 지원 및 모든 데이터 영구 파기</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-light">
+    <h2>상담 신청</h2>
+    <p>망설임은 해결을 늦출 뿐입니다. 지금 바로 전문가와 상의하세요.</p>
+    <p style="font-size: 2rem; color: #d4af37; font-weight: bold; margin: 20px 0;">TEL 010-4578-3511</p>
+    <p>이메일: yunjehko@gmail.com | 카카오톡: yunjehko</p>
+</section>
+
+<footer>
+    <p><strong>상호명:</strong> 화양탐정사무소 | <strong>대표자:</strong> 고윤제 | <strong>사업자등록번호:</strong> 143-24-01675</p>
+    <p><strong>주소:</strong> 경북 구미시 상사서로 128 | <strong>전화:</strong> 010-4578-3511</p>
+    <br>
+    <p>&copy; 2025 화양탐정사무소. All Rights Reserved. 본 사이트의 무단 복제를 금합니다.</p>
+</footer>
+
+<a href="tel:010-4578-3511" class="call-btn">📞 긴급 전화 상담</a>
+
+</body>
+</html>" class="call-btn">📞 긴급 전화 상담</a>
+
+</body>
+</html>
